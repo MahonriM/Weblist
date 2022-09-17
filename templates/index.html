@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar  lista</title>
+</head>
+<body>
+    <form action="/" method="POST">
+   <label>Ingresa  el  elemento    a   la  lista</label>
+    <br>
+    <input type="text"  name="txtelem">
+    <input type="submit" value="agregar">
+    <br>  
+    <ul>
+    {%for   i   in  lista%}
+    <li>   
+     {{i}}    
+    </li> 
+    {%endfor%}
+</ul>
+</form>
+</body>
+</html>
